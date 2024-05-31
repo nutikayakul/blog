@@ -7,62 +7,89 @@
   </head>
 
   <style>
-    h2 {
-      font-size: 30px;
-    }
-    p {
-      font-size: 16px;
-    }
-    h3 {
-      font-size: 20px;
-      margin-left: 20px;
-    }
-    .card {
-      padding: 2rem;
-    }
-    .p1 {
-      text-align: center;
-      align-items: center;
-      justify-content: space-between;
-      display: block;
-      width: 200px;
-    }
-    img {
-      display: block;
-    }
+.card{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgb(24, 23, 23);
+  color: #fff;
+}
+.p1{
+  width: 500px;
+}
+.p2{
+  width: 500px;
+}
+.p3{
+  width: 500px;
+}
+.p4{
+  width: 500px;
+}
+.p5{
+  width: 500px;
+}
+.p6{
+  width: 500px;
+}
+.p7{
+  width: 500px;
+}
+.p8{
+  width: 500px;
+}
+.p9{
+  width: 500px;
+}
+.img-container img {
+  border-radius: 10px;
+}
+/* ปรับขนาดของรูปภาพตาม Responsive ของโทรศัพท์ */
+img.p1 {
+  max-width: 100%;
+  height: auto;
+}
+img.p2 {
+  max-width: 100%;
+  height: auto;
+}
+img.p3 {
+  max-width: 100%;
+  height: auto;
+}
+img.p4 {
+  max-width: 100%;
+  height: auto;
+}
+img.p5 {
+  max-width: 100%;
+  height: auto;
+}
+img.p6 {
+  max-width: 100%;
+  height: auto;
+}
+img.p7 {
+  max-width: 100%;
+  height: auto;
+}
+img.p8 {
+  max-width: 100%;
+  height: auto;
+}
+img.p9 {
+  max-width: 100%;
+  height: auto;
+}
+.img-container {
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-    .card {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      transition: 0.3s;
-      border-radius: 5px;
-      overflow: hidden;
-      background-color: rgb(0, 0, 0);
-      color: #fff;
-    }
 
-    .card:hover {
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    }
-
-    .container {
-      padding: 2px 16px;
-    }
-
-    /* ปรับขนาดภาพให้เต็มความกว้างของ card */
-    .card img {
-      width: 700px;
-      height: auto;
-    }
-
-    /* ปรับขนาดข้อความให้เหมาะสมกับหน้าจอโทรศัพท์ */
-    .card h2,
-    .card h3,
-    .card p {
-      font-size: 16px;
-    }
-    .b2{
-      margin: 20px;
-    }
 
     
   </style>
@@ -116,11 +143,13 @@
           ผลิตในระดับอุตสาหกรรมทั้งในทวีปอเมริกา ยุโรป และญี่ปุ่น แลประเทศอื่นๆ
           สืบต่อมาจนถึงปัจจุบัน
         </p>
-        <img
-          src="https://www.scimath.org/images/uploads/upload1/Image_005.jpg"
-          alt=""
-          class="p1"
-        />
+        <div class="img-container">
+          <img
+            src="https://www.scimath.org/images/uploads/upload1/Image_005.jpg"
+            alt=""
+            class="p1"
+          />
+        </div>
 
         <p>
           ในยุคอดีตมนุษย์อาจจะใช้นิ้วจุ่มดินหรือหินสี ที่บดเป็นผงผสมกับยางไม้
@@ -185,11 +214,13 @@
           หรือปกป้องไฟล์ข้อมูลที่มีความเป็นส่วนตัวสูง นับเป็นนวัตกรรมใหม่ ๆ
           ที่น่าสนใจมากเลยทีเดียว
         </p>
+        <div class="img-container">
         <img
           src="https://www.krungsri.com/getmedia/15805deb-08fd-48a3-b09c-30beb59b53fa/trend-new-innovation-technology-2024-image-detail-03.webp.aspx"
           alt=""
           class="p2"
         />
+      </div>
         <h3>3. AI-Augmented Development</h3>
         <p>
           ในช่วงเวลาปี 2024 จะเป็นการมาถึงของเทรนด์การใช้ AI
@@ -198,11 +229,12 @@
           ทั้งในเรื่องการเขียนโค้ด หรือการทดสอบซอฟต์แวร์ต่าง ๆ ให้มีความง่ายดาย
           ช่วยเพิ่มความสะดวกและลดเวลารวมไปถึงต้นทุนในการพัฒนาซอฟต์แวร์ได้มากยิ่งขึ้นอีกด้วย
         </p>
+        <div class="img-container">
         <img
           src="https://miro.medium.com/v2/resize:fit:1400/1*h06OOVCQRRsF76LjjrDu1g.jpeg"
           alt=""
           class="p3"
-        />
+        /></div>
 
         <h3>4. Intelligent Applications</h3>
         <p>
@@ -213,11 +245,12 @@
           ในการสร้างความแปลกใหม่เพื่อเพิ่มความน่าสนใจในแอปฯ
           ของตัวเองเพื่อดึงดูดลูกค้าให้เข้ามาใช้งาน
         </p>
+        <div class="img-container">
         <img
           src="https://eu-images.contentstack.com/v3/assets/blt69509c9116440be8/blt33a4be87247034d9/65a6a2864dd6f5040a06fdc0/intelligent_apps_2T7DE5R.jpg?width=850&auto=webp&quality=95&format=jpg&disable=upscale"
           alt=""
           class="p4"
-        />
+        /></div>
 
         <h3>5. Augmented-Connected Workforce</h3>
         <p>
@@ -232,11 +265,12 @@
           เพื่อช่วยพัฒนาคนทำงานในองค์กรให้มีทักษะการทำงานที่ดีขึ้น
           แต่ใช้เวลาให้น้อยลงนั่นเอง
         </p>
+        <div class="img-container">
         <img
           src="https://www.splunk.com/content/dam/splunk-blogs/images/en_us/2023/11/augmented-connected-reality.jpg"
           alt=""
           class="p5"
-        />
+        /></div>
       </div>
     </div>
 
@@ -255,11 +289,12 @@
           รวมถึงอุปกรณ์ที่เกี่ยวข้องกับการสื่อสารและการโต้ตอบข้อมูล เช่น
           คอมพิวเตอร์, โทรศัพท์มือถือ, อินเทอร์เน็ต, โทรทัศน์ดิจิตอล เป็นต้น
         </p>
+        <div class="img-container">
         <img
           src="https://infotechlearning.wordpress.com/wp-content/uploads/2016/05/communication-technology-people.png"
           alt=""
           class="p6"
-        />
+        /></div>
         <p>
           เทคโนโลยีสารสนเทศและการสื่อสาร หมายถึง
           เทคโนโลยีที่เกี่ยวข้องกับข่าวสารข้อมูลและการสื่อสาร นับตั้งแต่การสร้าง
@@ -277,11 +312,12 @@
           การใช้งานอินเทอร์เน็ตไร้สาย (Wi-Fi), การใช้งานเทคโนโลยีเซลลูลาร์
           (Cellular Technology) เป็นต้น
         </p>
+        <div class="img-container">
         <img
           src="https://erp.mju.ac.th/openFile.aspx?id=NTkyOTcy&method=inline"
           alt=""
           class="p7"
-        />
+        /></div>
         <p>
           ความก้าวหน้าของด้านวิทยาศาสตร์และเทคโนโลยี
           ทำให้มีการพัฒนาคิดค้นสิ่งอำนวยความสะดวกต่อการดำรงชีวิตของมนุษย์
@@ -304,10 +340,11 @@
           โดยทั่วไปเทคโนโลยีเหล่านี้เป็นเทคโนโลยีใหม่
           แต่ยังรวมถึงเทคโนโลยีรุ่นเก่าที่ค้นหาแอปพลิเคชันใหม่ๆ ด้วย
         </p>
+        <div class="img-container">
         <img
           src="https://hellenicocrteam.gr/wp-content/uploads/2021/07/Emerging-Technologies.jpg"
-          alt=""
-        />
+          alt="" class="p8"
+        /></div>
 
         <p><b>4. เทคโนโลยีเครื่องมือและอุปกรณ์ (Tools and Equipment Technology): </b>รวมถึงเครื่องมือและอุปกรณ์ที่ใช้ในการผลิต และการให้บริการ เช่น เครื่องจักรอัตโนมัติ, ระบบการควบคุมอัตโนมัติ, และเทคโนโลยีสำหรับการวิเคราะห์และทดสอบสารเคมี เป็นต้น</p>
         <p>เทคโนโลยีเครื่องมือและอุปกรณ์หมายถึงเครื่องมือหรืออุปกรณ์ที่ใช้เพื่อให้การทำงานหรือกิจกรรมใด ๆ เป็นไปอย่างมีประสิทธิภาพมากขึ้นหรือง่ายขึ้นด้วยการใช้เทคโนโลยีต่าง ๆ ต่อไปนี้คือตัวอย่างบางอย่าง:</p>
@@ -324,8 +361,9 @@
         <p><b>- เครื่องมือการดูแลสุขภาพแบบพกพา:</b>เช่น อุปกรณ์ตรวจวัดความดันโลหิต, อุปกรณ์ตรวจวัดการเต้นของหัวใจ, และอุปกรณ์ตรวจวัดระดับน้ำตาลในเลือด</p>
         <p><b>- ระบบสารสนเทศทางการแพทย์ (Health Information Systems):</b>ระบบฐานข้อมูลทางการแพทย์ที่ช่วยในการจัดเก็บ, จัดการ, และแลกเปลี่ยนข้อมูลระหว่างโรงพยาบาล, คลินิก, และผู้ให้บริการด้านสุขภาพ</p>
         <p><b>- แอปพลิเคชันสุขภาพ:</b>แอปพลิเคชันที่ช่วยในการติดตามสุขภาพ, การออกกำลังกาย, การจัดการโรค, และการเผยแพร่ข้อมูลทางการแพทย์</p>
-        <img src="https://media.graphassets.com/resize=fit:crop,width:1280,height:660/rN9OeqsPRPuN0oWiQjGt" alt="">
-
+        <div class="img-container">
+        <img src="https://media.graphassets.com/resize=fit:crop,width:1280,height:660/rN9OeqsPRPuN0oWiQjGt" alt="" class="p9">
+      </div>
       </div>
     </div>
   </body>
