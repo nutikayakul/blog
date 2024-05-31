@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        .border_green {
+            border: solid #DADADA;
+            padding: 5px;
+            /* display: inline-block; */
+            float: left;
+            width: 15.15%;
+            height: 800px;
+            justify-content: space-around;
+
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            gap: 20px;
+            display: block;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .border_green {
+            float: left;
+        }
+
+
+        .middle {
+            width: 50%;
+        }
+
+
+
+        /* Responsive โทรศัพท์มือถือ */
+        @media screen and (max-width: 600px) {
+            .img2 {
+                height: 100%;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .border_green {
+                width: 80%;
+                float: none;
+                margin: 0 auto;
+                height: 20%;
+                gap: 20px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            .row2 {
+                flex-direction: column;
+            }
+
+            .column img {
+                width: 100%;
+            }
+
+            h1 {
+                display: flex;
+            }
+
+            .row {
+                align-items: center;
+                justify-content: space-around;
+                padding: 20px;
+                margin: 50px;
+            }
+
+
+            .row3 {
+                margin: 0px 0px 0px 0px;
+            }
+
+        }
+
+        /* ถึงนี้ */
+
+        div h2 {
+            color: rgb(255, 102, 0);
+        }
+
+
+        .row2 {
+            display: flex;
+        }
+
+        .column {
+            flex: 33.33%;
+            padding: 5px;
+
+        }
+
+        .inner_position_left {
+            text-align: center;
+        }
+
+        .row {
+            align-items: center;
+            padding: 20px;
+            margin: 50px;
+            justify-content: space-around;
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            gap: 20px;
+            display: block;
+        }
+
+        .img2 {
+            padding-top: 80px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .p2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .x3 {
+            padding-top: 60px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+
+
+    <h1>เทคโนโลยีสำหรับรองเท้าของเรา</h1>
+    <p>ด้วยความเชี่ยวชาญกว่า 40 ปีทั้งการวิจัยและการพัฒนาที่มีเราอยู่เบื้องหลัง
+        เราได้ทำทุกอย่างที่ทำได้เพื่อทำให้รองเท้านิรภัยของเราสบายมากขึ้น เราได้พัฒนาเทคโนโลยีที่พิเศษเฉพาะ 3
+        รายการโดยมีเป้าหมายที่จะมอบความสะดวกสบายมากยิ่งขึ้น</p>
+    <p><b style="color: rgb(255, 102, 0);">สิ่งที่เป็นแรงบันดาลใจให้เรา:</b>รูปร่างตามธรรมชาติของเท้า
+        ที่มีส่วนโค้ง รูปร่างทั้งหมดนี้มีส่วนประกอบของกระดูก ข้อต่อ เส้นเอ็น
+        และกล้ามเนื้อของเท้าเข้าด้วยกันอย่างชาญฉลาด</p>
+    <p><b style="color: rgb(255, 102, 0);">เหตุใด?</b>เพราะอะไรทำให้ความโค้งและความยืดหยุ่นที่เปลี่ยนแปลงไป ?
+        การปรับส่วนโค้งให้เข้ากับสภาพพื้นดินได้ มันทำหน้าที่เป็นตัวกันลื่นซึ่งเป็นสิ่งจำเป็นต่อความยืดหยุ่น</p>
+    <p>สัญลักษณ์แห่งการกระทำ ความสามารถในการปรับตัวและก้าวไปข้างหน้านี้แสดงเป็นรูปทรงกลมของเทคโนโลยีพิเศษ
+        เฉพาะของเรา 3 รายการ</p>
+    <img class="img2" src="https://parade.co.th/wp-content/uploads/2024/05/technologies-inspired-300x182.webp"
+        alt="อ่านเพิ่มเติมเกี่ยวกับเทคโนโลยีของเราที่ได้รับแรงบันดาลใจจากรูปร่างและออกแบบมาเพื่อความสบาย">
+    <p></p>
+    <img class="img2" src="https://parade.co.th/wp-content/uploads/2024/05/chaussureSecurite.webp" alt="">
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <div class="row">
+        <div class="border_green">
+            <img class="img2"
+                src="https://parade.co.th/wp-content/uploads/elementor/thumbs/PICTO_VPS_SYSTEM-qo382n2ej68i514a7qdvtrsa8kqucvzwroy9nxzxa4.webp"
+                alt="">
+            <h2>VPS* SYSTEM (SUSPENDED ARCH SUPPORT)</h2>
+            <p>รูปทรงตามหลักทางกายภาพของรองเท้าช่วยรักษาโครงสร้างของเท้าได้อย่างดี โดยจะยึดตามส่วนโค้งของเท้า
+                และการรองรับภายในของพื้นรองเท้านี้จะสร้างความสบาย โดยเฉพาะในกรณีของการเดินหรือการยืนในเวลานานๆ
+                โดยไม่มีการเคลื่อนไหว </p>
+            <img style="width: 70%;" style="margin-top: 70px;" class="img2"
+                src="https://parade.co.th/wp-content/uploads/elementor/thumbs/VPS-SYSTEM-qo382wgya0reenw4dil2v840kw015ghwhd96y0474w.webp"
+                alt="">
+        </div>
+        <div class="border_green">
+            <img class="img2"
+                src="https://parade.co.th/wp-content/uploads/elementor/thumbs/PICTO_DRS_SYSTEM-qo382n2ej68i514a7qdvtrsa8kqucvzwroy9nxzxa4.webp"
+                alt="">
+            <h2>DRS (DELETE RESONANCE SYSTEM) / DRS 2</h2>
+            <p>เทคโนโลยี DRS ของเราอยู่ที่ส้นเท้าและทำหน้าที่เป็นตัวกันลื่น DRS
+                คือช่องใต้ส้นเท้าที่มีรูปร่างคล้ายร่องเสี้ยวครึ่งวงกลม เมื่อส้นเท้าสัมผัสกับสภาพพื้นผิว
+                ช่องนี้จะตกลงเข้าด้านในและเคลื่อนไปตามส้นเท้าเพื่อปรับให้เข้ากับสภาพพื้นผิว
+                ทำให้การเคลื่อนไหวไปข้างหน้าของเท้าเป็นไปอย่างดียิ่งขึ้น คุณจะพบกับ DRS 2 ได้บนพื้นรองเท้าแบบ Racing
+                sport ของเรา</p>
+            <img style="width: 70%; " style="margin-top: 70px;" class="p2"
+                src="https://parade.co.th/wp-content/uploads/elementor/thumbs/DRS-qo382l6w00byjcci7dpk1ayhg9jml394ftfd6okx7k.webp"
+                alt="">
+        </div>
+        <div class="border_green">
+            <img class="img2"
+                src="https://parade.co.th/wp-content/uploads/elementor/thumbs/PICTO_AIR-qo382n2ej68i514a7qdvtrsa8kqucvzwroy9nxzxa4.webp"
+                alt="">
+            <h2>VPS* SYSTEM (SUSPENDED ARCH SUPPORT)</h2>
+            <p>เทคโนโลยี PARADE AIR SYSTEM
+                ของเรายังได้รับแรงบันดาลใจจากรูปทรงออร์แกนิกและความกลมของส่วนโค้งของเท้าอีกด้วย เทคโนโลยี PARADE AIR
+                SYSTEM คือฟองอากาศที่ห่อหุ้มอยู่ที่พื้นรองเท้าชั้นนอกของรองเท้า
+                เทคโนโลยีเนี้ช่วยเพิ่มความยืดหยุ่นในขณะที่เดินไปข้างหน้า</p>
+            <img style="width: 70%; " style="margin-top: 70px;" class="x3"
+                src="https://parade.co.th/wp-content/uploads/elementor/thumbs/PARADE-AIR-SYSTEM-qo382n2kdoej6k9rweit6ahen1ad0hgl42qc58i4v4.webp"
+                alt="">
+        </div>
+    </div>
+    <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="row3">
+        <div class="inner_position_left">
+            <h1>โล่ที่1 : โล่แห่งการป้องกันรอยขีดข่วนของเรา </h1>
+            <p>วัสดุ SHIELD ONE พิเศษเฉพาะของเราเป็นเกราะป้องกันรอยขีดข่วนอย่างแท้จริง ระบายอากาศได้ดีด้วยดีไซน์ Parade
+                Shield ช่วยป้องกันการสึกหรอ สูตรผ้า + TPU
+                ตรงตามข้อกำหนดด้านความทนทานต่อการเสียดสีที่กำหนดโดยมาตรฐานถุงมือ
+                EN388 (ประสิทธิภาพระดับ 4/4) วัสดุที่มีความทนทานสูงนี้มีอยู่ในรองเท้า S1P ของเราในกลุ่มผลิตภัณฑ์ RACING:
+                Ride and Racer</p>
+            <img src="https://parade.co.th/wp-content/uploads/2024/05/SHIELD-ONE-768x543.webp" alt="">
+        </div>
+        <!----------------------------------------------------------แยกdiv------------------------------------------------------------------------->
+        <div class="inner_position_left">
+            <h1>FLEX SYSTEM </h1>
+            <p>เทคโนโลยี FLEX SYSTEM ของเราเหมาะสำหรับการทำงานที่ต้องการความยืดหยุ่นและแข็งแรงมากที่สุด
+                เทคโนโลยีนี้เหมาะสำหรับงานก่อสร้างและพื้นผิวที่ไม่เรียบ
+                ด้วยการออกแบบพิเศษของพื้นรองเท้าที่มีร่องลึกลดพื้นที่ที่มีแรงกดบนพื้นรองเท้า
+                จึงมอบความยืดหยุ่นและความสบายในการเดินได้
+                เมื่อเท้าเคลื่อนไหวรองเท้าจะเคลื่อนไหวไปพร้อมกับเท้าและร่องลึกแนวนอนกับหลุมที่อยู่ใต้กระดูกเท้าช่วงตรงเท้าที่เท้าโค้งได้โดยธรรมชาติและเมื่อเคลื่อนเท้าไปข้างหน้าดินทรายที่รองเท้าจะหลุดออกมาเอง
+                คุณสามารถพบเทคโนโลยี FLEX SYSTEM ของเราในรองเท้าทุกรุ่นที่มีพื้นรองเท้า NEBRASKA และ NEVADA ของเรา</p>
+            <img src="https://parade.co.th/wp-content/uploads/elementor/thumbs/FLEX-SYSTEM-qo382l6tkary081gvnzwlt0rycso6esgkghrxbexpo.webp"
+                alt="">
+            <img src="https://parade.co.th/wp-content/uploads/elementor/thumbs/FLEX_SYSTEM_2-scaled-qo382l6tkary081gvnzwlt0rycso6esgkghrxbexpo.webp"
+                alt="">
+        </div>
+        <!----------------------------------------------------------แยกdiv------------------------------------------------------------------------->
+
+        <div class="inner_position_left">
+            <h1>BE FLEX 2.0 </h1>
+            <p>เทคโนโลยี BE FLEX 2.0 ออกแบบมาเพื่องานที่ต้องการความยืดหยุ่นและความสะดวกสบายในการเดิน เช่น
+                งานดานโลจิสติกส์ เป็นต้น
+                ส่วนด้านข้างของพื้นรองเท้าถูกยกสูงขึ้นที่ส่วนหน้าของเท้าเพื่อให้ง่ายต่อความยืดหยุ่น
+                ส่วนด้านหน้ามีการออกแบบพิเศษด้วยร่องตามขวาง 3
+                ช่องเพื่อการเคลื่อนไหวและความยืดหยุ่นสูงสุดสำหรับส่วนหน้าของเท้า</p>
+            <p>คุณจะพบกับเทคโนโลยี BE FLEX 2.0 ได้ในรองเท้า RACING ของเรา</p>
+            <img src="https://parade.co.th/wp-content/uploads/elementor/thumbs/BE-FLEX-2.0-qo382jb56mpdd0476n6ngthurl1xr0kzw76syrhq24.webp"
+                alt="">
+            <img src="https://parade.co.th/wp-content/uploads/elementor/thumbs/BE_FLEX_1-scaled-qo382jb56mpdd0476n6ngthurl1xr0kzw76syrhq24.webp"
+                alt="">
+        </div>
+
+        <!----------------------------------------------------------แยกdiv------------------------------------------------------------------------->
+    </div>
+
+
+    </div>
+</body>
+
+</html>
