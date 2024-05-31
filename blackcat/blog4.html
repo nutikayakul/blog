@@ -7,50 +7,82 @@
   <title>Document</title>
 </head>
 
-<body>
+
   <style>
-    .jsimg01 {
-      width: 300px;
-      overflow: hidden;
-    }
-    .jsimg2{
-      width: 300px;
-      overflow: hidden;
+
+    /* สำหรับอุปกรณ์ที่มีขนาดหน้าจอน้อยกว่า 768px (โทรศัพท์มือถือ) */
+@media only screen and (max-width: 768px) {
+  .js {
+    padding: 10px; /* เพื่อให้มีพื้นที่ข้างนอกน้อยลงบนโทรศัพท์ */
+  }
+
+  /* ปรับขนาดภาพให้เต็มขนาดของหน้าจอ */
+  .img-container img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+    .p2{
+      width: 500px;
     }
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
-    .container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    h1, h2 {
-      color: #333;
-    }
-    p {
-      color: #666;
-      line-height: 1.6;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 20px auto;
-      border-radius: 8px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    }
-  </style>
-  <div class="container">
-    <h1>ภาษาJavaScript</h1>
-    <img class="p1" src="https://img-c.udemycdn.com/course/480x270/405818_aa3f_3.jpg" alt="">
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.container {
+    text-align: center;
+}
+
+.content {
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+h1 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+}
+
+h2 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 3px;
+}
+
+.img-container {
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  line-height: 1.6;
+}
+
+.js {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.img-container img {
+  border-radius: 10px;
+}
+
+
+  </style>
+<body>
+  <div class="js">
+    <h1>ภาษาJavaScript</h1>
+    <div class="img-container">
+    <img class="p2" src="https://www.hwlibre.com/wp-content/uploads/2020/03/programacion.jpeg" alt="">
+  </div>
     <h2>JavaScript คืออะไร</h2>
     <p>JavaScript เป็นภาษาโปรแกรมที่นักพัฒนาใช้ในการสร้างหน้าเว็บแบบอินเทอร์แอคทีฟ
       ตั้งแต่การรีเฟรชฟีดสื่อโซเชียลไปจนถึงการแสดงภาพเคลื่อนไหวและแผนที่แบบอินเทอร์แอคทีฟ ฟังก์ชันของ JavaScript
@@ -58,12 +90,20 @@
       จึงเป็นหนึ่งในเทคโนโลยีหลักของ World Wide Web ยกตัวอย่างเช่น เมื่อคุณท่องเว็บแล้วเห็นภาพสไลด์
       เมนูดร็อปดาวน์แบบคลิกให้แสดงผล หรือสีองค์ประกอบที่เปลี่ยนแบบไดนามิกบนหน้าเว็บ นั่นคือคุณเห็นเอฟเฟกต์ของ JavaScript
     </p>
-    <img class="p2" src="https://t1.blockdit.com/photos/2021/12/61bcb04052c7290dcf52d44e_800x0xcover_QnnMQ-J_.jpg" alt="">
+    <div class="img-container">
+
+      <img class="p2" src="https://t1.blockdit.com/photos/2021/12/61bcb04052c7290dcf52d44e_800x0xcover_QnnMQ-J_.jpg" alt="">
+    </div>
+
     <h2>JavaScript นำไปใช้ทำอะไร</h2>
     <p>แต่ก่อนเว็บเพจเป็นแบบคงที่คล้ายกับหน้าหนังสือ โดยหลักแล้วหน้าเพจคงที่แสดงข้อมูลในเค้าโครงที่ตายตัว
       และไม่ได้ทำทุกอย่างที่ตอนนี้เราคาดหวังจากเว็บไซต์สมัยใหม่ JavaScript
       เกิดขึ้นในฐานะเทคโนโลยีฝั่งเบราว์เซอร์เพื่อทำให้เว็บแอปพลิเคชันมีความเป็นไดนามิกมากขึ้น เมื่อใช้ JavaScript
       เบราว์เซอร์จะสามารถตอบสนองต่อการโต้ตอบของผู้ใช้และเปลี่ยนแปลงเค้าโครงเนื้อหาบนเว็บเพจได้</p>
+      <div class="img-container">
+
+        <img class="p2" src="https://www.itgenius.co.th/assets/frondend/images/picarticle/genius-32914324518751883.jpg" alt="">
+      </div>
     <p>เมื่อภาษาผ่านการพัฒนาอย่างเต็มที่ นักพัฒนา JavaScript ก็สร้างไลบรารี เฟรมเวิร์ก และแนวทางปฏิบัติในการเขียนโปรแกรม
       แล้วเริ่มนำ JavaScript ไปใช้นอกเว็บเบราว์เซอร์ วันนี้ คุณสามารถใช้ JavaScript
       สำหรับทั่งการพัฒนาฝั่งไคลเอ็นต์และฝั่งเซิร์ฟเวอร์ เราให้ตัวอย่างกรณีการใช้พบที่พบบ่อยบางส่วนในหัวข้อย่อยต่อไปนี้:
@@ -83,6 +123,10 @@
       JavaScript ในขณะที่ในภาษาโปรแกรมอื่น ๆ คอมไพเลอร์จะคอมไพล์โค้ดทั้งหมดเป็นโค้ดสำหรับเครื่องในขั้นตอนที่แยกต่างหาก
       ดังนั้น ภาษาเขียนสคริปต์ทั้งหมดจึงเป็นภาษาโปรแกรม แต่ไม่ใช่ว่าภาษาโปรแกรมทั้งหมดจะเป็นภาษาเขียนสคริปต์เสมอไป</p>
     <h3>กลไก JavaScript</h3>
+    <div class="img-container">
+
+      <img class="p2" src="https://www.itgenius.co.th/assets/frondend/images/picarticle/genius-33114324523638155.jpg" alt="">
+    </div>
     <p>กลไก JavaScript คือโปรแกรมคอมพิวเตอร์ที่เรียกใช้โค้ด JavaScript กลไก JavaScript เคยเป็นเพียงตัวแปลผล
       แต่กลไกสมัยใหม่ทั้งหมดใช้การคอมไพล์แบบ Just-in-time หรือรันไทม์เพื่อปรับปรุงประสิทธิภาพ</p>
     <h3>JavaScript ฝั่งไคลเอ็นต์</h3>
@@ -100,12 +144,17 @@
       จากนั้นกลไกจะแปลผลไบต์โค้ด และทำการเปลี่ยนแปลง DOM<br>
       5.เบราว์เซอร์แสดงผล DOM ใหม่</p>
     <h3>JavaScript ฝั่งเซิร์ฟเวอร์</h3>
+    
     <p>JavaScript ฝั่งเซิร์ฟเวอร์หมายถึงการใช้ภาษาเขียนโค้ดในลอจิกของเซิร์ฟเวอร์แบ็คเอนด์ ในกรณีนี้ กลไก JavaScript
       จะอยู่บนเซิร์ฟเวอร์โดยตรง ฟังก์ชัน JavaScript ฝั่งเซิร์ฟเวอร์สามารถเข้าถึงฐานข้อมูล ดำเนินการทางตรรกะแบบต่าง ๆ
       และตอบสนองต่อเหตุการณ์ต่าง ๆ ที่ถูกกระตุ้นจากระบบปฏิบัติการของเซิร์ฟเวอร์
       ข้อได้เปรียบหลักของการเขียนสคริปต์ฝั่งเซิร์ฟเวอร์คือคุณสามารถปรับแต่งการตอบสนองของเว็บไซต์โดยอ้างอิงตามข้อกำหนดของคุณ
       สิทธิ์เข้าถึงของคุณ และคำขอข้อมูลจากระบบได้เป็นอย่างมาก</p>
     <h3>ฝั่งไคลเอ็นต์เทียบกับฝั่งเซิร์ฟเวอร์</h3>
+    <div class="img-container">
+
+      <img class="p2" src="https://nuuneoi.com/blog/906/004.png" alt="">
+    </div>
     <p>คำว่าไดนามิกอธิบาย JavaScript ทั้งฝั่งไคลเอ็นต์และฝั่งเซิร์ฟเวอร์
       พฤติกรรมไดนามิกคือความสามารถที่จะอัปเดตการแสดงของเว็บเพจเพื่อสร้างเนื้อหาใหม่ตามที่จำเป็น ความแตกต่างระหว่าง
       JavaScript ฝั่งไคลเอ็นต์และฝั่งเซิร์ฟเวอร์อยู่ที่วิธีการที่ JavaScript สร้างเนื้อหาใหม่
@@ -145,6 +194,10 @@
       แทนที่จะส่งคำขอดังกล่าวทั้งหมดไปยังเซิร์ฟเวอร์ การจัดการคำขอเหล่านี้บางส่วนบนฝั่งไคลเอ็นต์จะมีประสิทธิภาพมากกว่า
       นักพัฒนาเว็บทำเช่นนี้ได้ด้วยการใช้ไลบรารี JavaScript เช่น Date.js, Sylvester และ JavaScript URL Library</p>
     <h2>เฟรมเวิร์ก JavaScript คืออะไร</h2>
+    <div class="img-container">
+
+      <img class="p2" src="https://i.ytimg.com/vi/GU7Oawpi6O4/maxresdefault.jpg" alt="">
+    </div>
     <p>เช่นเดียวกับไลบรารี JavaScript เฟรมเวิร์ก JavaScript คือชุดส่วนย่อยของโค้ดที่เขียนไว้ก่อนซึ่งทำหน้าที่ต่าง ๆ
       และสามารถนำมาใช้ซ้ำได้ อย่างไรก็ตาม ในขณะที่ไลบรารี JavaScript เป็นเครื่องมือเฉพาะทางสำหรับการใช้งานตามต้องการ
       เฟรมเวิร์ก JavaScript คือชุดเครื่องมือที่ครบถ้วนที่ช่วยก่อร่างและจัดระเบียบแอปพลิเคชันเว็บใด ๆ
@@ -175,10 +228,6 @@
 
  
   </div>
-
-
-
-
 
 </body>
 
