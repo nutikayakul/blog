@@ -7,91 +7,117 @@
   </head>
 
   <style>
-.card{
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 50px;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: rgb(24, 23, 23);
-  color: #fff;
-}
-.p1{
-  width: 500px;
-}
-.p2{
-  width: 500px;
-}
-.p3{
-  width: 500px;
-}
-.p4{
-  width: 500px;
-}
-.p5{
-  width: 500px;
-}
-.p6{
-  width: 500px;
-}
-.p7{
-  width: 500px;
-}
-.p8{
-  width: 500px;
-}
-.p9{
-  width: 500px;
-}
-.img-container img {
-  border-radius: 10px;
-}
-/* ปรับขนาดของรูปภาพตาม Responsive ของโทรศัพท์ */
-img.p1 {
-  max-width: 100%;
-  height: auto;
-}
-img.p2 {
-  max-width: 100%;
-  height: auto;
-}
-img.p3 {
-  max-width: 100%;
-  height: auto;
-}
-img.p4 {
-  max-width: 100%;
-  height: auto;
-}
-img.p5 {
-  max-width: 100%;
-  height: auto;
-}
-img.p6 {
-  max-width: 100%;
-  height: auto;
-}
-img.p7 {
-  max-width: 100%;
-  height: auto;
-}
-img.p8 {
-  max-width: 100%;
-  height: auto;
-}
-img.p9 {
-  max-width: 100%;
-  height: auto;
-}
-.img-container {
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+    .card {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 50px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: rgb(24, 23, 23);
+      color: #fff;
+    }
+    .p0 {
+      width: 500px;
+    }
+    .p1 {
+      width: 500px;
+    }
+    .p2 {
+      width: 500px;
+    }
+    .p3 {
+      width: 500px;
+    }
+    .p4 {
+      width: 500px;
+    }
+    .p5 {
+      width: 500px;
+    }
+    .p6 {
+      width: 500px;
+    }
+    .p7 {
+      width: 500px;
+    }
+    .p8 {
+      width: 500px;
+    }
+    .p9 {
+      width: 500px;
+    }
+    .img-container img {
+      border-radius: 10px;
+    }
+    /* ปรับขนาดของรูปภาพตาม Responsive ของโทรศัพท์ */
+    img.p0 {
+      max-width: 100%;
+      height: auto;
+    }
+    img.p1 {
+      max-width: 100%;
+      height: auto;
+    }
+    img.p2 {
+      max-width: 100%;
+      height: auto;
+    }
+    img.p3 {
+      max-width: 100%;
+      height: auto;
+    }
+    img.p4 {
+      max-width: 100%;
+      height: auto;
+    }
+    img.p5 {
+      max-width: 100%;
+      height: auto;
+    }
+    img.p6 {
+      max-width: 100%;
+      height: auto;
+    }
+    img.p7 {
+      max-width: 100%;
+      height: auto;
+    }
+    img.p8 {
+      max-width: 100%;
+      height: auto;
+    }
+    img.p9 {
+      max-width: 100%;
+      height: auto;
+    }
+    .img-container {
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
 
+    .card-container {
+      display: flex; /* จัดการแสดงผลให้ card อยู่ในแถวเดียวกัน */
+      justify-content: space-between; /* จัดการระยะห่างระหว่าง card */
+    }
 
-    
+    .card {
+      width: 200; /* กำหนดความกว้างของ card */
+      background-color: #ffffff; /* สีพื้นหลังของ card */
+      padding: 20px; /* กำหนดระยะห่างของเนื้อหาภายใน card */
+      border-radius: 10px; /* กำหนดรูปร่างของ card */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้กับ card */
+      color: #000000;
+    }
+
+    .card h2 {
+      color: #000000; /* สีของหัวข้อใน card */
+    }
+
+    .card p {
+      color: #000000; /* สีของเนื้อหาใน card */
+    }
   </style>
 
   <body>
@@ -106,6 +132,13 @@ img.p9 {
           มนุษย์ก็คิดหาวิธีแก้ปัญหาทั้งแบบการวิธีการและการสร้างชิ้นงาน
           ทำให้การใช้ชีวิตมีความสะดวกสบาย
         </p>
+        <div class="img-container">
+          <img
+            class="p0"
+            src="https://www.thaihealth.or.th/data/content/32732/cms/thaihealth_c_adefjkosux37.jpg"
+            alt=""
+          />
+        </div>
         <p>
           ในชีวิตประจำวันเราพบเจอสิ่งต่างๆ ที่อยู่รอบตัวเรา
           ทั้งสิ่งที่เกิดขึ้นเองตามธรรมชาติ เช่น แม่น้ำ ภูเขา ต้นไม้
@@ -215,12 +248,12 @@ img.p9 {
           ที่น่าสนใจมากเลยทีเดียว
         </p>
         <div class="img-container">
-        <img
-          src="https://www.krungsri.com/getmedia/15805deb-08fd-48a3-b09c-30beb59b53fa/trend-new-innovation-technology-2024-image-detail-03.webp.aspx"
-          alt=""
-          class="p2"
-        />
-      </div>
+          <img
+            src="https://www.krungsri.com/getmedia/15805deb-08fd-48a3-b09c-30beb59b53fa/trend-new-innovation-technology-2024-image-detail-03.webp.aspx"
+            alt=""
+            class="p2"
+          />
+        </div>
         <h3>3. AI-Augmented Development</h3>
         <p>
           ในช่วงเวลาปี 2024 จะเป็นการมาถึงของเทรนด์การใช้ AI
@@ -230,11 +263,12 @@ img.p9 {
           ช่วยเพิ่มความสะดวกและลดเวลารวมไปถึงต้นทุนในการพัฒนาซอฟต์แวร์ได้มากยิ่งขึ้นอีกด้วย
         </p>
         <div class="img-container">
-        <img
-          src="https://miro.medium.com/v2/resize:fit:1400/1*h06OOVCQRRsF76LjjrDu1g.jpeg"
-          alt=""
-          class="p3"
-        /></div>
+          <img
+            src="https://miro.medium.com/v2/resize:fit:1400/1*h06OOVCQRRsF76LjjrDu1g.jpeg"
+            alt=""
+            class="p3"
+          />
+        </div>
 
         <h3>4. Intelligent Applications</h3>
         <p>
@@ -246,11 +280,12 @@ img.p9 {
           ของตัวเองเพื่อดึงดูดลูกค้าให้เข้ามาใช้งาน
         </p>
         <div class="img-container">
-        <img
-          src="https://eu-images.contentstack.com/v3/assets/blt69509c9116440be8/blt33a4be87247034d9/65a6a2864dd6f5040a06fdc0/intelligent_apps_2T7DE5R.jpg?width=850&auto=webp&quality=95&format=jpg&disable=upscale"
-          alt=""
-          class="p4"
-        /></div>
+          <img
+            src="https://eu-images.contentstack.com/v3/assets/blt69509c9116440be8/blt33a4be87247034d9/65a6a2864dd6f5040a06fdc0/intelligent_apps_2T7DE5R.jpg?width=850&auto=webp&quality=95&format=jpg&disable=upscale"
+            alt=""
+            class="p4"
+          />
+        </div>
 
         <h3>5. Augmented-Connected Workforce</h3>
         <p>
@@ -266,11 +301,12 @@ img.p9 {
           แต่ใช้เวลาให้น้อยลงนั่นเอง
         </p>
         <div class="img-container">
-        <img
-          src="https://www.splunk.com/content/dam/splunk-blogs/images/en_us/2023/11/augmented-connected-reality.jpg"
-          alt=""
-          class="p5"
-        /></div>
+          <img
+            src="https://www.splunk.com/content/dam/splunk-blogs/images/en_us/2023/11/augmented-connected-reality.jpg"
+            alt=""
+            class="p5"
+          />
+        </div>
       </div>
     </div>
 
@@ -290,11 +326,12 @@ img.p9 {
           คอมพิวเตอร์, โทรศัพท์มือถือ, อินเทอร์เน็ต, โทรทัศน์ดิจิตอล เป็นต้น
         </p>
         <div class="img-container">
-        <img
-          src="https://infotechlearning.wordpress.com/wp-content/uploads/2016/05/communication-technology-people.png"
-          alt=""
-          class="p6"
-        /></div>
+          <img
+            src="https://infotechlearning.wordpress.com/wp-content/uploads/2016/05/communication-technology-people.png"
+            alt=""
+            class="p6"
+          />
+        </div>
         <p>
           เทคโนโลยีสารสนเทศและการสื่อสาร หมายถึง
           เทคโนโลยีที่เกี่ยวข้องกับข่าวสารข้อมูลและการสื่อสาร นับตั้งแต่การสร้าง
@@ -313,11 +350,12 @@ img.p9 {
           (Cellular Technology) เป็นต้น
         </p>
         <div class="img-container">
-        <img
-          src="https://erp.mju.ac.th/openFile.aspx?id=NTkyOTcy&method=inline"
-          alt=""
-          class="p7"
-        /></div>
+          <img
+            src="https://erp.mju.ac.th/openFile.aspx?id=NTkyOTcy&method=inline"
+            alt=""
+            class="p7"
+          />
+        </div>
         <p>
           ความก้าวหน้าของด้านวิทยาศาสตร์และเทคโนโลยี
           ทำให้มีการพัฒนาคิดค้นสิ่งอำนวยความสะดวกต่อการดำรงชีวิตของมนุษย์
@@ -341,30 +379,100 @@ img.p9 {
           แต่ยังรวมถึงเทคโนโลยีรุ่นเก่าที่ค้นหาแอปพลิเคชันใหม่ๆ ด้วย
         </p>
         <div class="img-container">
-        <img
-          src="https://hellenicocrteam.gr/wp-content/uploads/2021/07/Emerging-Technologies.jpg"
-          alt="" class="p8"
-        /></div>
+          <img
+            src="https://hellenicocrteam.gr/wp-content/uploads/2021/07/Emerging-Technologies.jpg"
+            alt=""
+            class="p8"
+          />
+        </div>
 
-        <p><b>4. เทคโนโลยีเครื่องมือและอุปกรณ์ (Tools and Equipment Technology): </b>รวมถึงเครื่องมือและอุปกรณ์ที่ใช้ในการผลิต และการให้บริการ เช่น เครื่องจักรอัตโนมัติ, ระบบการควบคุมอัตโนมัติ, และเทคโนโลยีสำหรับการวิเคราะห์และทดสอบสารเคมี เป็นต้น</p>
-        <p>เทคโนโลยีเครื่องมือและอุปกรณ์หมายถึงเครื่องมือหรืออุปกรณ์ที่ใช้เพื่อให้การทำงานหรือกิจกรรมใด ๆ เป็นไปอย่างมีประสิทธิภาพมากขึ้นหรือง่ายขึ้นด้วยการใช้เทคโนโลยีต่าง ๆ ต่อไปนี้คือตัวอย่างบางอย่าง:</p>
-        <p><b class="b2">1. คอมพิวเตอร์และโน้ตบุ๊ก:</b>คอมพิวเตอร์และโน้ตบุ๊กเป็นเครื่องมือสำคัญที่ใช้ในการทำงานทั่วไป, การเรียนรู้, การสร้างสรรค์, การสื่อสาร, และอื่น ๆ</p>
-        <p><b class="b2">2. สมาร์ทโฟนและแท็บเล็ต:</b>สมาร์ทโฟนและแท็บเล็ตเป็นอุปกรณ์ที่มีหลายฟังก์ชันเช่นโทรศัพท์, กล้องถ่ายรูป, เครื่องเล่นมัลติมีเดีย, และเครื่องมือสำหรับการเรียนรู้และการทำงาน</p>
-        <p><b class="b2">3. เครื่องใช้ไฟฟ้าเชื่อมต่ออินเทอร์เน็ต (IoT):</b>เครื่องใช้ไฟฟ้าเชื่อมต่ออินเทอร์เน็ตเช่นเครื่องซักผ้า, ตู้เย็น, หลอดไฟ, และเครื่องปรับอากาศ สามารถควบคุมผ่านแอปพลิเคชันบนสมาร์ทโฟนหรือคอมพิวเตอร์ได้</p>
-        <p><b class="b2">4. รถยนต์อัจฉริยะ:</b>รถยนต์ที่ใช้เทคโนโลยีสมัยใหม่เช่นระบบนำทางอัตโนมัติ, ระบบช่วยขับ, และการเชื่อมต่อกับอุปกรณ์สมาร์ทโฟน</p>
-        <p><b class="b2">5. อุปกรณ์สวมใส่ (Wearable Devices):</b>อุปกรณ์เช่นสมาร์ทวอทช์, สายรัดข้อมือสำหรับตรวจวัดสุขภาพและการออกกำลังกาย</p>
+        <p>
+          <b
+            >4. เทคโนโลยีเครื่องมือและอุปกรณ์ (Tools and Equipment Technology): </b
+          >รวมถึงเครื่องมือและอุปกรณ์ที่ใช้ในการผลิต และการให้บริการ เช่น
+          เครื่องจักรอัตโนมัติ, ระบบการควบคุมอัตโนมัติ,
+          และเทคโนโลยีสำหรับการวิเคราะห์และทดสอบสารเคมี เป็นต้น
+        </p>
+        <p>
+          เทคโนโลยีเครื่องมือและอุปกรณ์หมายถึงเครื่องมือหรืออุปกรณ์ที่ใช้เพื่อให้การทำงานหรือกิจกรรมใด
+          ๆ เป็นไปอย่างมีประสิทธิภาพมากขึ้นหรือง่ายขึ้นด้วยการใช้เทคโนโลยีต่าง ๆ
+          ต่อไปนี้คือตัวอย่างบางอย่าง:
+        </p>
+        <p>
+          <b class="b2">1. คอมพิวเตอร์และโน้ตบุ๊ก:</b
+          >คอมพิวเตอร์และโน้ตบุ๊กเป็นเครื่องมือสำคัญที่ใช้ในการทำงานทั่วไป,
+          การเรียนรู้, การสร้างสรรค์, การสื่อสาร, และอื่น ๆ
+        </p>
+        <p>
+          <b class="b2">2. สมาร์ทโฟนและแท็บเล็ต:</b
+          >สมาร์ทโฟนและแท็บเล็ตเป็นอุปกรณ์ที่มีหลายฟังก์ชันเช่นโทรศัพท์,
+          กล้องถ่ายรูป, เครื่องเล่นมัลติมีเดีย,
+          และเครื่องมือสำหรับการเรียนรู้และการทำงาน
+        </p>
+        <p>
+          <b class="b2">3. เครื่องใช้ไฟฟ้าเชื่อมต่ออินเทอร์เน็ต (IoT):</b
+          >เครื่องใช้ไฟฟ้าเชื่อมต่ออินเทอร์เน็ตเช่นเครื่องซักผ้า, ตู้เย็น,
+          หลอดไฟ, และเครื่องปรับอากาศ
+          สามารถควบคุมผ่านแอปพลิเคชันบนสมาร์ทโฟนหรือคอมพิวเตอร์ได้
+        </p>
+        <p>
+          <b class="b2">4. รถยนต์อัจฉริยะ:</b
+          >รถยนต์ที่ใช้เทคโนโลยีสมัยใหม่เช่นระบบนำทางอัตโนมัติ, ระบบช่วยขับ,
+          และการเชื่อมต่อกับอุปกรณ์สมาร์ทโฟน
+        </p>
+        <p>
+          <b class="b2">5. อุปกรณ์สวมใส่ (Wearable Devices):</b
+          >อุปกรณ์เช่นสมาร์ทวอทช์,
+          สายรัดข้อมือสำหรับตรวจวัดสุขภาพและการออกกำลังกาย
+        </p>
 
-        <p><b>5. เทคโนโลยีการแพทย์และด้านสุขภาพ (Medical and Healthcare Technology): </b> หมายถึงการใช้เทคโนโลยีในด้านการแพทย์และการดูแลสุขภาพเพื่อปรับปรุงการดูแลผู้ป่วย, การวินิจฉัยโรค, การรักษา, และการจัดการสุขภาพโดยรวม โดยการนำเทคโนโลยีมาใช้ในด้านนี้มักจะมีผลดีต่อคุณภาพของการดูแลสุขภาพ, ลดความเสี่ยงของโรค, และเพิ่มประสิทธิภาพในการให้บริการด้านการแพทย์และการดูแลสุขภาพ รวมถึงเทคโนโลยีที่ใช้ในการวินิจฉัย, รักษา, และดูแลสุขภาพ เช่น การใช้งานเครื่องมือและเทคโนโลยีในการรักษาโรค, ระบบการบันทึกข้อมูลและการจัดการข้อมูลทางการแพทย์ เป็นต้น
+        <p>
+          <b
+            >5. เทคโนโลยีการแพทย์และด้านสุขภาพ (Medical and Healthcare
+            Technology):
+          </b>
+          หมายถึงการใช้เทคโนโลยีในด้านการแพทย์และการดูแลสุขภาพเพื่อปรับปรุงการดูแลผู้ป่วย,
+          การวินิจฉัยโรค, การรักษา, และการจัดการสุขภาพโดยรวม
+          โดยการนำเทคโนโลยีมาใช้ในด้านนี้มักจะมีผลดีต่อคุณภาพของการดูแลสุขภาพ,
+          ลดความเสี่ยงของโรค,
+          และเพิ่มประสิทธิภาพในการให้บริการด้านการแพทย์และการดูแลสุขภาพ
+          รวมถึงเทคโนโลยีที่ใช้ในการวินิจฉัย, รักษา, และดูแลสุขภาพ เช่น
+          การใช้งานเครื่องมือและเทคโนโลยีในการรักษาโรค,
+          ระบบการบันทึกข้อมูลและการจัดการข้อมูลทางการแพทย์ เป็นต้น
         </p>
         <b class="b2">นี่คือบางตัวอย่างของเทคโนโลยีการแพทย์และด้านสุขภาพ:</b>
-        <p><b>- เครื่องมือการวินิจฉัยและรักษา:</b>เช่น อุปกรณ์ภาพอัลตราซาวน์ด (Ultrasound), เครื่องรังสีเอกซเรย์ (X-ray), ตรวจสอบความเข้มข้นของกระดูกด้วย MRI, ระบบปรับแก้ร่างกายด้วยการผ่าตัดโดยใช้หุ่นยนต์</p>
-        <p><b>- เครื่องมือการดูแลสุขภาพแบบพกพา:</b>เช่น อุปกรณ์ตรวจวัดความดันโลหิต, อุปกรณ์ตรวจวัดการเต้นของหัวใจ, และอุปกรณ์ตรวจวัดระดับน้ำตาลในเลือด</p>
-        <p><b>- ระบบสารสนเทศทางการแพทย์ (Health Information Systems):</b>ระบบฐานข้อมูลทางการแพทย์ที่ช่วยในการจัดเก็บ, จัดการ, และแลกเปลี่ยนข้อมูลระหว่างโรงพยาบาล, คลินิก, และผู้ให้บริการด้านสุขภาพ</p>
-        <p><b>- แอปพลิเคชันสุขภาพ:</b>แอปพลิเคชันที่ช่วยในการติดตามสุขภาพ, การออกกำลังกาย, การจัดการโรค, และการเผยแพร่ข้อมูลทางการแพทย์</p>
+        <ul>
+          <li>
+            <b>เครื่องมือการวินิจฉัยและรักษา:</b>เช่น อุปกรณ์ภาพอัลตราซาวน์ด
+            (Ultrasound), เครื่องรังสีเอกซเรย์ (X-ray),
+            ตรวจสอบความเข้มข้นของกระดูกด้วย MRI,
+            ระบบปรับแก้ร่างกายด้วยการผ่าตัดโดยใช้หุ่นยนต์
+          </li>
+          <li>
+            <b>เครื่องมือการดูแลสุขภาพแบบพกพา:</b>เช่น
+            อุปกรณ์ตรวจวัดความดันโลหิต, อุปกรณ์ตรวจวัดการเต้นของหัวใจ,
+            และอุปกรณ์ตรวจวัดระดับน้ำตาลในเลือด
+          </li>
+          <li>
+            <b>ระบบสารสนเทศทางการแพทย์ (Health Information Systems):</b
+            >ระบบฐานข้อมูลทางการแพทย์ที่ช่วยในการจัดเก็บ, จัดการ,
+            และแลกเปลี่ยนข้อมูลระหว่างโรงพยาบาล, คลินิก,
+            และผู้ให้บริการด้านสุขภาพ
+          </li>
+          <li>
+            <b>แอปพลิเคชันสุขภาพ:</b>แอปพลิเคชันที่ช่วยในการติดตามสุขภาพ,
+            การออกกำลังกาย, การจัดการโรค, และการเผยแพร่ข้อมูลทางการแพทย์
+          </li>
+        </ul>
         <div class="img-container">
-        <img src="https://media.graphassets.com/resize=fit:crop,width:1280,height:660/rN9OeqsPRPuN0oWiQjGt" alt="" class="p9">
-      </div>
+          <img
+            src="https://media.graphassets.com/resize=fit:crop,width:1280,height:660/rN9OeqsPRPuN0oWiQjGt"
+            alt=""
+            class="p9"
+          />
+        </div>
       </div>
     </div>
+    
   </body>
 </html>

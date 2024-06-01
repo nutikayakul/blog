@@ -10,141 +10,102 @@
 <body>
 
     <style>
-        .border_green {
-            border: solid #DADADA;
-            /* display: inline-block; */
-            float: left;
-            height: 700px;
-            justify-content: space-around;
-            /* grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); */
-            gap: 20px;
-            border-radius: 10px;
-            text-align: center;
-            margin-bottom: 20px;
-            width: 20%;
-            padding: 20px;
-        }
-
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        .border_green {
-            float: left;
-        }
-
-
-        .middle {
-            width: 50%;
-        }
-
-
-
+        
         /* Responsive โทรศัพท์มือถือ */
         @media screen and (max-width: 600px) {
-            .img2 {
-                height: 100%;
-            }
-
             img {
                 max-width: 100%;
                 height: auto;
+                text-align: center;
             }
-
-            .border_green {
-                width: 80%;
-                float: none;
-                margin: 0 auto;
-                height: 20%;
-                gap: 20px;
-            }
-
+            
             h2 {
-                font-size: 18px;
+                font-size: 16px;
             }
-
+            
             p {
                 font-size: 14px;
             }
-
-            .row2 {
-                flex-direction: column;
-            }
-
-            .column img {
-                width: 100%;
-            }
-
-            h1 {
-                display: flex;
-            }
-
-            .row {
-                align-items: center;
-                justify-content: space-around;
-                padding: 20px;
-                margin: 50px;
-            }
-
-
-            .row3 {
-                margin: 0px 0px 0px 0px;
-            }
-
         }
-        /* ถึงนี้ */
-
-        div h2 {
-            color: rgb(255, 102, 0);
-        }
-
-
-        .row2 {
+        .card2 {
             display: flex;
+            justify-content: space-around;
+            width: 100%;
+            font-size: 20px;
         }
-
-        .column {
-            flex: 33.33%;
-            padding: 5px;
-
+        
+        .card {
+            width: 20%;
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
+        /* Responsive โทรศัพท์มือถือ ถึงนี้ */
+
 
         .inner_position_left {
             text-align: center;
         }
-
-        .row {
-            align-items: center;
-            padding: 20px;
-            margin: 50px;
-            justify-content: space-around;
-            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-            gap: 20px;
-        }
-
         .img2 {
+            width: 300px;
+            padding-top: 200px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .img3{
+            width: 500px;
             padding-top: 80px;
             display: block;
             margin-left: auto;
             margin-right: auto;
         }
-
+        .img4{
+            width: 80px;
+            text-align: center;
+            align-items: center;
+        }
         .p2 {
             display: block;
             margin-left: auto;
             margin-right: auto;
             padding-top: 40px;
         }
-
         .x3 {
-            padding-top: 60px;
+            padding-top: 130px;
             display: block;
             margin-left: auto;
             margin-right: auto;
         }
-
+        .card2{
+            width: 22.22%;
+            background-color: #f0f0f0;
+            padding: 20px;
+            /* margin: auto; */
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: block;
+        }
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            font-size: 16px;
+        }
+        .card {
+            width: 20%;
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    
     </style>
 
 
@@ -162,51 +123,52 @@
     <img class="img2" src="https://parade.co.th/wp-content/uploads/2024/05/technologies-inspired-300x182.webp"
         alt="อ่านเพิ่มเติมเกี่ยวกับเทคโนโลยีของเราที่ได้รับแรงบันดาลใจจากรูปร่างและออกแบบมาเพื่อความสบาย">
     <p></p>
-    <img class="img2" src="https://parade.co.th/wp-content/uploads/2024/05/chaussureSecurite.webp" alt="">
+    <img class="img3" src="https://parade.co.th/wp-content/uploads/2024/05/chaussureSecurite.webp" alt="">
 
     <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-    <div class="row">
-        <div class="border_green">
-            <img class="img2"
-                src="https://parade.co.th/wp-content/uploads/elementor/thumbs/PICTO_VPS_SYSTEM-qo382n2ej68i514a7qdvtrsa8kqucvzwroy9nxzxa4.webp"
-                alt="">
-            <h2>VPS* SYSTEM (SUSPENDED ARCH SUPPORT)</h2>
-            <p>รูปทรงตามหลักทางกายภาพของรองเท้าช่วยรักษาโครงสร้างของเท้าได้อย่างดี โดยจะยึดตามส่วนโค้งของเท้า
-                และการรองรับภายในของพื้นรองเท้านี้จะสร้างความสบาย โดยเฉพาะในกรณีของการเดินหรือการยืนในเวลานานๆ
-                โดยไม่มีการเคลื่อนไหว </p>
-            <img style="width: 70%;" style="margin-top: 70px;" class="img2"
-                src="https://parade.co.th/wp-content/uploads/elementor/thumbs/VPS-SYSTEM-qo382wgya0reenw4dil2v840kw015ghwhd96y0474w.webp"
-                alt="">
+    <div class="card-container">
+        <div class="card2">
+            <img class="img4"
+            src="https://parade.co.th/wp-content/uploads/elementor/thumbs/PICTO_VPS_SYSTEM-qo382n2ej68i514a7qdvtrsa8kqucvzwroy9nxzxa4.webp"
+            alt="">
+        <h2 style="color: rgb(255, 102, 0);">VPS* SYSTEM (SUSPENDED ARCH SUPPORT)</h2>
+        <p>รูปทรงตามหลักทางกายภาพของรองเท้าช่วยรักษาโครงสร้างของเท้าได้อย่างดี โดยจะยึดตามส่วนโค้งของเท้า
+            และการรองรับภายในของพื้นรองเท้านี้จะสร้างความสบาย โดยเฉพาะในกรณีของการเดินหรือการยืนในเวลานานๆ
+            โดยไม่มีการเคลื่อนไหว </p>
+        <img style="width: 70%;" style="margin-top: 70px;" class="img2"
+            src="https://parade.co.th/wp-content/uploads/elementor/thumbs/VPS-SYSTEM-qo382wgya0reenw4dil2v840kw015ghwhd96y0474w.webp"
+            alt="">
         </div>
-        <div class="border_green">
-            <img class="img2"
-                src="https://parade.co.th/wp-content/uploads/elementor/thumbs/PICTO_DRS_SYSTEM-qo382n2ej68i514a7qdvtrsa8kqucvzwroy9nxzxa4.webp"
-                alt="">
-            <h2>DRS (DELETE RESONANCE SYSTEM) / DRS 2</h2>
-            <p>เทคโนโลยี DRS ของเราอยู่ที่ส้นเท้าและทำหน้าที่เป็นตัวกันลื่น DRS
-                คือช่องใต้ส้นเท้าที่มีรูปร่างคล้ายร่องเสี้ยวครึ่งวงกลม เมื่อส้นเท้าสัมผัสกับสภาพพื้นผิว
-                ช่องนี้จะตกลงเข้าด้านในและเคลื่อนไปตามส้นเท้าเพื่อปรับให้เข้ากับสภาพพื้นผิว
-                ทำให้การเคลื่อนไหวไปข้างหน้าของเท้าเป็นไปอย่างดียิ่งขึ้น คุณจะพบกับ DRS 2 ได้บนพื้นรองเท้าแบบ Racing
-                sport ของเรา</p>
-            <img style="width: 70%; " style="margin-top: 70px;" class="p2"
-                src="https://parade.co.th/wp-content/uploads/elementor/thumbs/DRS-qo382l6w00byjcci7dpk1ayhg9jml394ftfd6okx7k.webp"
-                alt="">
+        <div class="card2">
+            <img class="img4"
+            src="https://parade.co.th/wp-content/uploads/elementor/thumbs/PICTO_DRS_SYSTEM-qo382n2ej68i514a7qdvtrsa8kqucvzwroy9nxzxa4.webp"
+            alt="">
+        <h2 style="color: rgb(255, 102, 0);">DRS (DELETE RESONANCE SYSTEM) / DRS 2</h2>
+        <p>เทคโนโลยี DRS ของเราอยู่ที่ส้นเท้าและทำหน้าที่เป็นตัวกันลื่น DRS
+            คือช่องใต้ส้นเท้าที่มีรูปร่างคล้ายร่องเสี้ยวครึ่งวงกลม เมื่อส้นเท้าสัมผัสกับสภาพพื้นผิว
+            ช่องนี้จะตกลงเข้าด้านในและเคลื่อนไปตามส้นเท้าเพื่อปรับให้เข้ากับสภาพพื้นผิว
+            ทำให้การเคลื่อนไหวไปข้างหน้าของเท้าเป็นไปอย่างดียิ่งขึ้น คุณจะพบกับ DRS 2 ได้บนพื้นรองเท้าแบบ Racing
+            sport ของเรา</p>
+        <img style="width: 70%; " style="margin-top: 70px;" class="p2"
+            src="https://parade.co.th/wp-content/uploads/elementor/thumbs/DRS-qo382l6w00byjcci7dpk1ayhg9jml394ftfd6okx7k.webp"
+            alt="">
         </div>
-        <div class="border_green">
-            <img class="img2"
-                src="https://parade.co.th/wp-content/uploads/elementor/thumbs/PICTO_AIR-qo382n2ej68i514a7qdvtrsa8kqucvzwroy9nxzxa4.webp"
-                alt="">
-            <h2>VPS* SYSTEM (SUSPENDED ARCH SUPPORT)</h2>
-            <p>เทคโนโลยี PARADE AIR SYSTEM
-                ของเรายังได้รับแรงบันดาลใจจากรูปทรงออร์แกนิกและความกลมของส่วนโค้งของเท้าอีกด้วย เทคโนโลยี PARADE AIR
-                SYSTEM คือฟองอากาศที่ห่อหุ้มอยู่ที่พื้นรองเท้าชั้นนอกของรองเท้า
-                เทคโนโลยีเนี้ช่วยเพิ่มความยืดหยุ่นในขณะที่เดินไปข้างหน้า</p>
-            <img style="width: 70%; " style="margin-top: 70px;" class="x3"
-                src="https://parade.co.th/wp-content/uploads/elementor/thumbs/PARADE-AIR-SYSTEM-qo382n2kdoej6k9rweit6ahen1ad0hgl42qc58i4v4.webp"
-                alt="">
+        <div class="card2">
+            <img class="img4"
+            src="https://parade.co.th/wp-content/uploads/elementor/thumbs/PICTO_AIR-qo382n2ej68i514a7qdvtrsa8kqucvzwroy9nxzxa4.webp"
+            alt="">
+        <h2 style="color: rgb(255, 102, 0);">VPS* SYSTEM (SUSPENDED ARCH SUPPORT)</h2>
+        <p>เทคโนโลยี PARADE AIR SYSTEM
+            ของเรายังได้รับแรงบันดาลใจจากรูปทรงออร์แกนิกและความกลมของส่วนโค้งของเท้าอีกด้วย เทคโนโลยี PARADE AIR
+            SYSTEM คือฟองอากาศที่ห่อหุ้มอยู่ที่พื้นรองเท้าชั้นนอกของรองเท้า
+            เทคโนโลยีเนี้ช่วยเพิ่มความยืดหยุ่นในขณะที่เดินไปข้างหน้า</p>
+        <img style="width: 70%; " style="margin-top: 70px;" class="x3"
+            src="https://parade.co.th/wp-content/uploads/elementor/thumbs/PARADE-AIR-SYSTEM-qo382n2kdoej6k9rweit6ahen1ad0hgl42qc58i4v4.webp"
+            alt="">
         </div>
-    </div>
+      </div>
+
     <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <div class="row3">
         <div class="inner_position_left">
@@ -216,7 +178,7 @@
                 ตรงตามข้อกำหนดด้านความทนทานต่อการเสียดสีที่กำหนดโดยมาตรฐานถุงมือ
                 EN388 (ประสิทธิภาพระดับ 4/4) วัสดุที่มีความทนทานสูงนี้มีอยู่ในรองเท้า S1P ของเราในกลุ่มผลิตภัณฑ์ RACING:
                 Ride and Racer</p>
-            <img src="https://parade.co.th/wp-content/uploads/2024/05/SHIELD-ONE-768x543.webp" alt="">
+            <img class="inner_position_left" src="https://parade.co.th/wp-content/uploads/2024/05/SHIELD-ONE-768x543.webp" alt="">
         </div>
         <!----------------------------------------------------------แยกdiv------------------------------------------------------------------------->
         <div class="inner_position_left">
